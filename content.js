@@ -14,4 +14,3 @@ chrome.scripting.executeScript(
     func: fuckedpuzzle,
   },
   () => { ... });
-         
