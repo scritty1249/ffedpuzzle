@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  
+  "name": "Fast Forwarding Edpuzzle Video",
+  "version": "1.0",
+  "description": "Allows alterations to playback speed of an edpuzzle video, and blocks the website from pausing when tabbed out.",
+  
+  "background": {
+    "service__worker": "background.js"
+  },
+  
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webNavigation"
+  ],
+  
+  "browser_action": {
+    "defualt_popup": "popup.html"
+  }
+}
