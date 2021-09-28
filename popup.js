@@ -1,11 +1,26 @@
-const more_speed = document.getElementById("faster");
-const speed_limit = "10" // Max playback speed before cycling back
+const speedy = document.getElementById("faster");
+const sped = document.getElementById("slower");
+const reset = document.getElementById("reference");
+const speed_limit = 10 // Max playback speed before cycling back
+var speed = 1
 
-more_speed.addEventListener("click", ()=>{
+function update_menu() {
+    reset.innerText = concat(" Video Speed ",ToString(speed)," ");
+}
 
-    if(more_speed.innerText === speed_limit){
-        more_speed.innerText = ToString(ParseInt());
+speedy.addEventListener("click", ()=>{
+    if(speed + 1 > speed_limit){
+        speed = 1;
     }else{
-        more_speed.innerText= "Red";
+        speed =+ 1;
+        update_menu()
+    }
+})
+sped.addEventListener("click", ()=>{
+    if(speed - 1 < 1){
+        speed = 10;
+    }else{
+        speed =- 1;
+        update_menu();
     }
 })
