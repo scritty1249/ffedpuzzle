@@ -15,7 +15,6 @@ function fuck_edpuzzle(playback, playing)
 function zoom_bitch(speed, video)
 {
     speed = parseInt(speed);
-    video = document.querySelector('video');
     youtube_handle = getFrame(video);
 
     chrome.scripting.executeScript(
@@ -27,16 +26,11 @@ function zoom_bitch(speed, video)
     () => { ... });
 }
 
-function update_menu() {
-    reset.innerText = concat(" Video Speed ",ToString(speed)," ");
-}
-
+const video = document.querySelector('video');
 // Can be optimized to push HTML objects into a NodeList, making this entire stupid thing parsable with a for loop... but CTRL+C CTRL+V go brrr :D
-speed1.addEventListener("click", ()=>{
-    if(speed + 1 > speed_limit){
-        speed = 1;
-    }else{
-        speed =+ 1;
-        update_menu()
-    }
-})
+speed1.addEventListener("click", ()=>{zoom_bitch(parseInt(speed1.innerText), video)});
+speed2.addEventListener("click", ()=>{zoom_bitch(parseInt(speed2.innerText), video)});
+speed3.addEventListener("click", ()=>{zoom_bitch(parseInt(speed3.innerText), video)});
+speed4.addEventListener("click", ()=>{zoom_bitch(parseInt(speed4.innerText), video)});
+speed5.addEventListener("click", ()=>{zoom_bitch(parseInt(speed5.innerText), video)});
+speed6.addEventListener("click", ()=>{zoom_bitch(parseInt(speed6.innerText), video)});
