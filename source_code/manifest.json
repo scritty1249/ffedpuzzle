@@ -15,6 +15,10 @@
     "webNavigation"
   ],
   
+  "icons": {
+   "128": "icon.png" 
+  }
+  
   "browser_action": {
     "defualt_popup": "popup.html"
   }
