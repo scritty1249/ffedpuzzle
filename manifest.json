@@ -17,5 +17,9 @@
     "activeTab",
     "scripting",
     "webNavigation"
-  ]
+  ],
+  
+  "action": {
+    "defualt_popup": "popup.html"
+  }
 }
