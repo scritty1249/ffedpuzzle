@@ -7,7 +7,7 @@
   
   "content_scripts": [{
     "js": ["content.js"],
-  }]
+  }],
   
   "background": {
     "service__worker": "background.js"
