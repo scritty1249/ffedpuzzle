@@ -5,10 +5,6 @@
   "version": "1.0",
   "description": "Allows alterations to playback speed of an edpuzzle video, and blocks the website from pausing when tabbed out.",
   
-  "content_scripts": [{
-    "js": ["content.js"],
-  }],
-  
   "background": {
     "service__worker": "background.js"
   },
