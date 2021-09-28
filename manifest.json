@@ -15,7 +15,7 @@
     "webNavigation"
   ],
   
-  "action": {
+  "browser_action": {
     "defualt_popup": "popup.html"
   }
 }
